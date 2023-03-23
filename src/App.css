@@ -1,0 +1,12 @@
+.App {
+  text-align: center;
+}
+
+.district{
+  background-color: darkcyan;
+  border: 8px solid rosybrown;
+  border-radius: 10px;
+  margin: 8px;
+  padding: 10px;
+}
+
