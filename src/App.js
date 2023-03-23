@@ -21,13 +21,20 @@ function Phone(){
   const [Phones, setPhones] = useState(100)
 
   const Charger=()=>{
-    const PhoneCharge = Phones - 10;
+    const PhoneCharge = Phones + 10;
     setPhones(PhoneCharge)
   }
+
+  const Decrease=()=>{
+    const PhoneChargeDecrease = Phones - 10
+    setPhones(PhoneChargeDecrease)
+  }
+
   return(
-    <div>
+    <div style={{margin: '10px'}}>
       <h1>charge: {Phones} </h1>
-        <button onClick={Charger}>Charge Percent</button>
+        <button onClick = {Charger}>Charge Percent Increase</button>
+        <button onClick = {Decrease}>Charger Percent Decrease</button>
     </div>
   )
 }
